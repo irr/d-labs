@@ -1,0 +1,7 @@
+env = Environment()
+target = 'ctest'
+sources = ['ctest.d']
+libs = ['phobos2', 'pthread', 'm', 'rt']
+includes = ['']
+
+env.Program(target = target, source = sources, LIBS = libs, DPATH = includes);
