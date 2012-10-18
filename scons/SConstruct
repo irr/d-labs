@@ -5,3 +5,4 @@ libs = ['phobos2', 'pthread', 'm', 'rt']
 includes = ['']
 
 env.Program(target = target, source = sources, LIBS = libs, DPATH = includes);
+env.Clean('.', '.sconsign.dblite')
