@@ -2,6 +2,7 @@ import tinyredis.redis;
 
 // https://github.com/adilbaig/Tiny-Redis
 // dmd -I~/git/Tiny-Redis redis.d libtinyredis_x64.a
+// dmd redis.d ~/git/Tiny-Redis/tinyredis/*
 
 void main()
 {
