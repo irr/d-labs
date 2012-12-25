@@ -3,6 +3,25 @@ d-labs
 
 **d-labs**  is a set of sample codes whose main purpose is to experiment and test [D] programming language
 
+Compiler
+-----------
+
+```shell
+[irocha@irrlab ~]$ cat /etc/dmd.conf 
+
+[Environment]
+
+DFLAGS=-I/data/D/libevent -L-levent -I/data/D/openssl -L-lssl -I%@P%/../../src/phobos -I%@P%/../../src/druntime/import -L-L%@P%/../lib64 -L-L%@P%/../lib32 -L--no-warn-search-mismatch -L--export-dynamic
+```
+
+Dependencies
+-----------
+
+* [openssl]: D version of the C headers for openssl 
+* [libevent]: libevent is an asynchronous event notification software library
+* [libevent2]: libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached
+
+
 Copyright and License
 -----------
 
@@ -20,3 +39,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
   
+[openssl]: https://github.com/D-Programming-Deimos/openssl
+[libevent]: https://github.com/D-Programming-Deimos/libevent
+[libevent2]: http://libevent.org/
