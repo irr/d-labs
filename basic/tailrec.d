@@ -1,3 +1,4 @@
+// dmd -O -run tailrec.d
 // dmd -w -wi -O tailrec.d && time ./tailrec; rm -rf tailrec tailrec.o
 
 import std.stdio;
