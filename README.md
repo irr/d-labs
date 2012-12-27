@@ -13,6 +13,10 @@ Compiler
 DFLAGS=-I/data/D/libevent -L-levent -I/data/D/openssl -L-lssl -I%@P%/../../src/phobos -I%@P%/../../src/druntime/import -L-L%@P%/../lib64 -L-L%@P%/../lib32 -L--no-warn-search-mismatch -L--export-dynamic
 ```
 
+```shell
+sudo ln -s /data/D/dmd2/linux/bin64/dmd.conf /etc/dmd.conf
+```
+
 Dependencies
 -----------
 
