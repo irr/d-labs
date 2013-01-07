@@ -1,8 +1,9 @@
+import core.stdc.stdlib;
 import tinyredis.redis;
 
-// https://github.com/adilbaig/Tiny-Redis
-// dmd -I~/git/Tiny-Redis redis.d libtinyredis_x64.a
-// dmd redis.d ~/git/Tiny-Redis/tinyredis/*
+// https://github.com/irr/Tiny-Redis (https://github.com/adilbaig/Tiny-Redis)
+// dmd -I~/gitf/Tiny-Redis redis.d libtinyredis_x64.a
+// dmd redis.d ~/gitf/Tiny-Redis/tinyredis/*
 
 void main()
 {
@@ -62,4 +63,6 @@ void main()
     assert(responses[0].type == ResponseType.Status);
     assert(responses[1].intval == 2);
     assert(responses[2].intval == 3);
+
+    exit(0);    
 }
