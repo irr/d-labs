@@ -17,7 +17,7 @@
 # under the License.
 #
 
-# cp -r /data/Thrift/thrift-0.9.0/lib/d $HOME/d/thrift/lib/
+# cp -r /data/D/thrift-0.9.0/lib/d $HOME/d/thrift/lib/
 LIB_D_DIR = ../lib/d
 
 GEN_SRC = ../gen-d/share/SharedService.d ../gen-d/share/shared_types.d \
