@@ -1,9 +1,8 @@
 import core.stdc.stdlib;
 import tinyredis.redis;
 
-// https://github.com/irr/Tiny-Redis (https://github.com/adilbaig/Tiny-Redis)
-// dmd -I~/gitf/Tiny-Redis redis.d libtinyredis_x64.a
-// dmd redis.d ~/gitf/Tiny-Redis/tinyredis/*
+// https://github.com/irr/Tiny-Redis
+// rdmd --build-only -I~/gitf/Tiny-Redis redis.d
 
 void main()
 {
